@@ -1,21 +1,38 @@
 body {
+    background-image:url("cool.gif");
     background-color: black;
-    color: rgb(0,0,0);
-    font-family: "Open Sans", sans-serif;
+    font-family:'Courier New', Courier, monospace;
     text-align: center;
+    color: rgb(0, 255, 0);
 }
-
 #content {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
-
-header {
-	
-}
-
 footer {
 	font-style: italic;
 	font-size: 90%;
 }
+
+h1{
+    font-size: 50px;
+}
+
+.bar1{
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    position:absolute;
+    bottom: -90%;   
+    left:0%;
+    background-image: url("barr.jpg");
+    flex: auto;
+}
+
+@keyframes barScroll {
+    0% {background-position:0px 0px;}
+    50% {background-position:-1740 0px;}
+    100% {background-position: -3480px 0px;}
+}
+
